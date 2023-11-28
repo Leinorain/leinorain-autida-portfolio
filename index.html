@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style>
+            div.invert {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body">
+        <h1>Leinorain Autida</h1>
+
+        <div id="app">
+            <p>I am {{ title }}, {{ age }} years old. Today is {{ date }}</p>
+            <p>{{ greetings }}</p>
+            <button @click="changeAge">
+                Increase age
+            </button>
+            <div :class="{invert: colors}">
+                a
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
